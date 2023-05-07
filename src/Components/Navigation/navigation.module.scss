@@ -1,0 +1,44 @@
+@import '../../sass/variables';
+
+.navList {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 0 22px;
+  max-width: 320px;
+
+  a {
+    position: relative;
+    color: $text-white-color;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .ActiveNavLink,
+  .NavLink:hover,
+  :focus {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $accent-color-hover;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .navList {
+    font-size: 18px;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .navList {
+    gap: 40px;
+  }
+}

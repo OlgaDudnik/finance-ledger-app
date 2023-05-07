@@ -1,0 +1,71 @@
+@import '../../sass/variables';
+
+.hero {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    center top / cover no-repeat url('../../images/home/showcase.jpg');
+  height: 533px;
+  padding: 0 20px;
+}
+
+.inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: $text-white-color;
+  width: 260px;
+
+  .title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 0 auto 8px;
+    max-width: 280px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .inner {
+    width: 523px;
+  }
+
+  .title {
+    font-size: 55px;
+    line-height: 1.3;
+  }
+
+  .text {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .inner {
+    width: 800px;
+  }
+
+  .title {
+    font-size: 55px;
+    line-height: 1.3;
+  }
+
+  .text {
+    line-height: 1.3;
+  }
+}

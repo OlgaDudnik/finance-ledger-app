@@ -1,0 +1,15 @@
+@import '../../sass/variables';
+
+.btn {
+  display: flex;
+  padding: 16px 32px;
+  gap: 10px;
+  background-color: $accent-color;
+  border-radius: 5px;
+  align-items: center;
+  color: $text-white-color;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
